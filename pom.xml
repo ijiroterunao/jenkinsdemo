@@ -47,7 +47,7 @@
                 </executions>
                 <configuration>
                     <imageName>test/${project.artifactId}:${project.version}</imageName>
-                    <dockerHost>http://49.234.77.60:2375</dockerHost>
+                    <dockerHost>http://192.168.2.237:2375</dockerHost>
                     <baseImage>jdk1.8</baseImage>
                     <entryPoint>["java","-jar","-Dspring.profiles.active=dev","/${project.build.finalName}.jar"]</entryPoint>
                     <resources>
